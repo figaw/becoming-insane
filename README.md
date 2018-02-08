@@ -1,17 +1,26 @@
-example of gradle not making any sense what-so-ever
+# GOAL
 
-projects with groovy code
+Bundle the smallest possible groovy application as a `jar`, using Gradle after they changed `sourceSets.output` in 4.0.
 
-each contain an `uberjar` task
+# Intro
 
-run a jar with
+Examples of gradle not building proper `jar`-archives.
+
+Contains 2 projects with boilerplate groovy code and a an `uberjar` task
+
+# Notes
+Run a jar with
 
 `$ java -jar build/libs/tempest.jar`
 
-# Standard
+# Problem
+Receiving error 
+`Error: Could not find or load main class App`
+
+# Project: standard
 
 A standard project
 
-# w-package
+# Project: w-package
 
 A project where a package is added to the files. Nothing changes.
